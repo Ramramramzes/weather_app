@@ -15,7 +15,7 @@ export function Form({ setWeatherImg }: { setWeatherImg: (value: keyof typeof we
   },[WeatherState.countryHistory])
 
   const getWeather = async() => {
-    await axios.get(`http://api.openweathermap.org/data/2.5/weather?q=${WeatherState.input}&units=metric&lang=ru&appid=fcca49da077b7c62ff42dd6365329afb`)
+    await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${WeatherState.input}&units=metric&lang=ru&appid=fcca49da077b7c62ff42dd6365329afb`)
       .then(response => {
         dispatch(addCountryToHistory(response.data.name))
         dispatch(updateCurrentWeather(response.data))

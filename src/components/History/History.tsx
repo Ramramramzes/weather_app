@@ -15,7 +15,7 @@ export function History() {
   const handleShow = () => setShow(true);
 
   const historyClickHandler = async(country:string) => {
-    await axios.get(`http://api.openweathermap.org/data/2.5/weather?q=${country}&units=metric&lang=ru&appid=fcca49da077b7c62ff42dd6365329afb`)
+    await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${country}&units=metric&lang=ru&appid=fcca49da077b7c62ff42dd6365329afb`)
       .then(response => {
         dispatch(updateCurrentWeather(response.data))
         dispatch(updateInput(''));
