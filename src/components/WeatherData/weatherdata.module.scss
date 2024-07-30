@@ -1,0 +1,28 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  width: 30%;
+  margin-bottom: 2%;
+  transition: 200ms linear;
+  text-shadow: 
+    1px 1px 0 rgb(80, 80, 250),
+    -1px -1px 0 rgb(80, 80, 250),
+    1px -1px 0 rgb(80, 80, 250),
+    -1px 1px 0 rgb(80, 80, 250);
+  .city{
+    font-size: 100px;
+    text-align: center;
+  }
+  .mainTemp{
+    font-size: 120px;
+    text-align: center;
+  }
+  .maxmin{
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+  }
+
+}

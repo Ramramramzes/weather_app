@@ -1,0 +1,26 @@
+.list{
+  cursor: pointer;
+  padding: 0px;
+  li{
+    padding: 3% 10%;
+    &:hover{
+      background-color: rgb(80, 80, 250);
+      transition: 200ms linear;
+      color: white;
+    }
+  }
+}
+.btn{
+  border: 2px solid rgb(80, 80, 250);
+  background-color: white;
+  color: rgb(80, 80, 250);
+  border-radius: 10px;
+  transition: 200ms linear;
+  padding: 3px 10px;
+  width: inherit;
+  &:hover{
+    color: white;
+    transition: 200ms linear;
+    background-color: rgb(80, 80, 250);
+  }
+}
